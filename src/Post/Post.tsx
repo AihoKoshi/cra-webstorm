@@ -1,13 +1,13 @@
 import React from 'react';
 
 export const Post = () => {
+    const sum = (a: number, b: number) => {
+        return a + b
+    }
     return (
         <div>
             <h2>Post1</h2>
-            <h2>Post2</h2>
-            <h2>Post3</h2>
-            <h2>Post4</h2>
-            <h2>Post5</h2>
+            <button onSubmit={()=> sum(2, 9)}>sum</button>
         </div>
     )
 }
